@@ -1,0 +1,99 @@
+.table-responsive {
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    background: #fafafa;
+}
+
+.table {
+    margin-bottom: 0;
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table thead {
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* tím → xanh */
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.table thead th {
+    border: none;
+    padding: 12px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+    transition: background 0.25s, transform 0.15s;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9ff; /* xanh ngọc nhạt */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.table tbody tr:hover {
+    background-color: #eaf4ff; /* hover xanh pastel */
+    transform: scale(1.01);
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.table td:first-child {
+    font-weight: 600;
+    color: #6a11cb; /* tím đậm */
+}
+
+.table .badge {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+    border-radius: 12px;
+}
+
+
+.stat-card {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.stat-card .h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.stat-card div {
+    font-size: 0.95rem;
+}
+
+/* Icon trong card */
+.stat-card .align-self-center i {
+    background: rgba(255,255,255,0.2);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* Thêm gradient riêng cho từng màu */
+.stat-card.bg-warning { background: linear-gradient(135deg, #FFD54F, #FFA726) !important; color: #212121 !important; }
+.stat-card.bg-success { background: linear-gradient(135deg, #66BB6A, #43A047) !important; }
+.stat-card.bg-info    { background: linear-gradient(135deg, #29B6F6, #0288D1) !important; }
+.stat-card.bg-primary { background: linear-gradient(135deg, #5C6BC0, #3949AB) !important; }
